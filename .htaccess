@@ -1,0 +1,13 @@
+
+
+Options All -Indexes
+
+# Url Amigables
+
+RewriteEngine on
+
+RewriteRule ^(\w+)$ index.php?ruta=$1
+
+
+
+
