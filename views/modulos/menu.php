@@ -7,7 +7,7 @@
 					<span>Inicio</span>
 				</a>
 			</li>
-			<li class="treeview">
+			<!-- <li class="treeview">
 				<a href="#">
 					<i class="fa fa-address-card-o"></i>
 					<span>Recursos Humanos</span>
@@ -36,7 +36,7 @@
 						</a>
 					</li>
 				</ul>
-			</li>
+			</li> -->
 
 			<!-- <li class="treeview">
 				<a href="#">
@@ -81,7 +81,7 @@
 				</ul>
 			</li> -->
 
-			<li class="treeview">
+			<!-- <li class="treeview">
 				<a href="#">
 					<i class="fa fa-file-powerpoint-o"></i>
 					<span>Ing. Producto</span>
@@ -128,9 +128,9 @@
 						</a>
 					</li>
 				</ul>
-			</li>
+			</li> -->
 
-			<li class="treeview">
+			<!-- <li class="treeview">
 	          <a href="#">
 	            <i class="fa fa-creative-commons"></i> <span>DPTO. Compras</span>
 	            <span class="pull-right-container">
@@ -158,9 +158,9 @@
 				</li>
 
 	          </ul>
-        	</li>
+        	</li> -->
 
-        	<li class="treeview">
+        	<!-- <li class="treeview">
 	          <a href="#">
 	            <i class="fa fa-bar-chart-o"></i> <span>Produccion Disco</span>
 	            <span class="pull-right-container">
@@ -188,7 +188,7 @@
 				</li>
 
 	          </ul>
-        	</li>
+        	</li> -->
 
 			<!-- <li class="">
 				<a href="clientes">
@@ -226,7 +226,7 @@
 					</li>
 				</ul>
 			</li> -->
-			<li class="treeview">
+			<!-- <li class="treeview">
 				<a href="#">
 					<i class="fa fa-sitemap"></i>
 					<span>Gestion de Calidad</span>
@@ -304,7 +304,7 @@
 					<i class="fa fa-user"></i>
 					<span>Usuarios</span>
 				</a>
-			</li>
+			</li> -->
 		</ul>
 
 	</section>

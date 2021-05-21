@@ -65,7 +65,7 @@
 		=    Buscar Shim de Hoja Ing            =
 		=============================================*/
 		static public function MdlBuscarHojaIngShim($tabla,$ColumnaShim, $ITEM){
-			$stmt = Conexion::conectar()->prepare("SELECT SH.*,NAMB.N_parte_AMB,PROV.Proveedor, (SELECT PROD.Cod_Provedor FROM producto PROD WHERE PROD.Id_Producto = SH.shim_int_1)des_shim_int_1, (SELECT PROD.Cod_Provedor FROM producto PROD WHERE PROD.Id_Producto = SH.shim_int_2)des_shim_int_2, (SELECT PROD.Cod_Provedor FROM producto PROD WHERE PROD.Id_Producto = SH.shim_ext_1)des_shim_ext_1, (SELECT PROD.Cod_Provedor FROM producto PROD WHERE PROD.Id_Producto = SH.shim_ext_2)des_shim_ext_2 FROM $tabla SH JOIN nomenclatura_amb NAMB ON SH.Id_AMB=NAMB.Id_AMB JOIN proveedor PROV ON SH.Id_Proveedor=PROV.Id_Proveedor WHERE SH.$ColumnaShim = :$ColumnaShim");
+			$stmt = Conexion::conectar()->prepare("SELECT SH.*,NAMB.N_parte_AMB,PROV.Proveedor, (SELECT PROD.Cod_Provedor FROM producto PROD WHERE PROD.Id_Producto = SH.shim_int_1)des_shim_int_1, (SELECT PROD.Cod_Provedor FROM producto PROD WHERE PROD.Id_Producto = SH.shim_int_2)des_shim_int_2, (SELECT PROD.Cod_Provedor FROM producto PROD WHERE PROD.Id_Producto = SH.shim_ext_1)des_shim_ext_1, (SELECT PROD.Cod_Provedor FROM producto PROD WHERE PROD.Id_Producto = SH.shim_ext_2)des_shim_ext_2 FROM $tabla SH JOIN nomenclatura_amb NAMB ON SH.Id_AMB=NAMB.Id_AMB JOIN proveedor PROV ON SH.Id_Proveedor=PROV.Id_Proveedor WHERE SH.$ColumnaShim = :$ColumnaShim AND SH.Id_Estatus =51");
 			$stmt -> bindParam(":".$ColumnaShim,$ITEM,PDO::PARAM_STR);
 			$stmt -> execute();
 			return $stmt->fetchAll();
@@ -91,13 +91,13 @@
 
 
 
-	/*===============================================================================================================================
+	/*======================================================================================================
 	=  Seccion Agregar Pedido Backlog           =
-	================================================================================================================================*/
+	========================================================================================================*/
 	
-		/*=============================================
+		/*===========================
 		=    Buscar Amb             =
-		=============================================*/
+		=============================*/
 		static public function MdlBuscarAmbClienteHojaIngBacklog($tabla,$item, $valor, $cliente){
 			$stmt = Conexion::conectar()->prepare("SELECT NAMB.N_parte_AMB, HI.ITEM, HI.Id_AMB, HI.Id_Hoja_Ingenieria, HI.Id_Cliente FROM $tabla HI JOIN nomenclatura_amb NAMB ON HI.Id_AMB=NAMB.Id_AMB WHERE HI.$item = :$item AND HI.Id_Cliente = $cliente");
 			$stmt -> bindParam(":".$item,$valor,PDO::PARAM_STR);

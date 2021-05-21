@@ -2618,7 +2618,7 @@ $(".tableShim").on("click", ".btnEditarShim", function(){
       processData:false,
       dataType: "json",
       success: function(respuesta){
-        // console.log("respuesta", respuesta);
+         console.log("respuesta shim pdf", respuesta);
 
         $("#Id_ShimHojIng").val(respuesta["Id_shim"]);
         $("#editaITEMShim").val(respuesta["ITEM"]);
@@ -2646,7 +2646,12 @@ $(".tableShim").on("click", ".btnEditarShim", function(){
 
         $("#editaoAdaptacionesShim").html(respuesta["Adaptaciones"]);
 
-        $(".previsualizareditaNumParPDFShim").attr("src",respuesta["Doc_pdf"]);
+        if (respuesta["Doc_pdf"] == 0 ) {
+
+        }  else{
+           $(".previsualizareditaNumParPDFShim").attr("src",respuesta["Doc_pdf"]);
+        }
+       
         $("#editaNumParPDFShimAnterior").val(respuesta["Doc_pdf"]); 
         
       }

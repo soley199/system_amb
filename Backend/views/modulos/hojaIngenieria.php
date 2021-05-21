@@ -29,7 +29,7 @@
               </select>
           </div>
         </div>
-        <!-- <form role="form" method="post">  -->
+        <!-- <form role="form" method="post"> -->
         <div class="form-group row" id="Ocultar">
           <div class="col">
             <h1 class="text-center" id="Cliente">CLIENTE</h1>
@@ -38,7 +38,7 @@
             <div class="form-group ">
               <label>Numero ITEM</label>
               <div class="input-group-btn">
-                <input type="text" class="form-control BusItem" name="BusItem" style="text-align:center;height:45px; font-size: 18px">
+                <input type="text" class="form-control BusItem" name="BusItem" id="BusItemText" style="text-align:center;height:45px; font-size: 18px">
               </div>
             </div>
             <button type="button" class="btn btn-primary BusItem" name="BusItem" id="BusItem">Buscar</button>
