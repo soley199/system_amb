@@ -20,7 +20,7 @@ class modeloBacklog{
 				return $stmt->fetchAll();
 			}
 			$stmt -> close();
-			$stmt = null;	
+			$stmt = null;
 		}
 		
 		/*=============================================

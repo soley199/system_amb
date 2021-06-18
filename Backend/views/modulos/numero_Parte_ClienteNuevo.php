@@ -17,7 +17,7 @@
             </div>
             <div class="box-body">
               <div class="row">
-                  <div class="col-md-2">
+                  <div class="col-sm-6 col-md-4 col-lg-2">
                     <label> Cliente</label>
                     <div class="input-group">
                       <span class="input-group-addon"><i class="fa fa-dot-circle-o"></i></span>
@@ -25,7 +25,7 @@
                       <input type="hidden" name="nuevoNumParIdCliente" id="nuevoNumParIdCliente" value="<?php echo$_POST["npIdCliente"] ?>">
                     </div>
                   </div>
-                  <div class="col-md-2">
+                  <div class=" col-sm-6 col-md-4 col-lg-2">
                     <label>N° AMB</label>
                       <div class="input-group">
                         <span  class="input-group-addon"><i class="fa fa-dot-circle-o"></i></span>
@@ -34,7 +34,7 @@
                         <span class="input-group-addon" style="padding: 0px 5px 0px 5px;"><button type="button" class="btn btn-xs btn-primary btnBuscarNumParAMB" edita="edita" style="margin-right: 3px;"><i class="fa fa-search"></i></button><button type="button" class="btn btn-xs btn-danger btnLimpiarNumParAMB"><i class="icon ion-backspace-outline"></i></button></span>
                       </div>                    
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-sm-6 col-md-4 col-lg-2">
                     <label>N° del Cliente</label>
                     <div class="input-group">
                       <span class="input-group-addon"><i class="fa fa-dot-circle-o"></i></span>
@@ -46,14 +46,14 @@
                       <input type="text" class="form-control" name="nuevoNumParPlanta" id="nuevoNumParPlanta" >
                     </div>
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-sm-4 col-md-4 col-lg-2">
                     <label>ITEM</label>
                     <div class="input-group">
                       <span class="input-group-addon"><i class="fa fa-dot-circle-o"></i></span>
                       <input type="text" class="form-control" name="nuevoNumParItem" id="nuevoNumParItem">
                     </div>
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-sm-4 col-md-4 col-lg-2">
                     <!-- Estatus -->
                     <label>Estatus</label>
                     <div class="input-group">
@@ -70,7 +70,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-2">
+                  <div class=" col-sm-4 col-md-4 col-lg-2">
                     <!-- Estatus -->
                     <label>Tipo de Prensado</label>
                     <div class="input-group">
@@ -112,7 +112,7 @@
             </div>
             <div class="box-body">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-sm-6 col-md-6 col-lg-4">
                   <label>Granalla</label>
                   <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-dot-circle-o"></i></span>
@@ -123,7 +123,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-6 col-md-6 col-lg-4">
                   <label>Adhesivo</label>
                   <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-dot-circle-o"></i></span>
@@ -134,7 +134,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-6 col-md-6 col-lg-4">
                   <label>Escorchado</label>
                   <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-dot-circle-o"></i></span>
@@ -263,7 +263,7 @@
             </div>
             <div class="box-body">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-sm 4 col-md-6 col-lg-4">
                   <div class="form-group">
                   <label>Codificar en:</label>
                     <div class="input-group">
@@ -277,14 +277,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm 4 col-md-6 col-lg-4">
                   <label>Tipo de negrilla</label>
                     <div class="input-group">
                       <span class="input-group-addon"><i class="fa fa-dot-circle-o"></i></span>
                       <input type="text" class="form-control" name="nuevoNumParTipoNegrilla" id="nuevoNumParTipoNegrilla">
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm 4 col-md-6 col-lg-4">
                   <label>Matriz</label>
                     <div class="input-group">
                       <span class="input-group-addon"><i class="fa fa-dot-circle-o"></i></span>
@@ -329,7 +329,7 @@
                     <div class="input-group">
                       <span class="input-group-addon"><i class="fa fa-dot-circle-o"></i></span>
                       <input type="text" class="form-control" name="nuevoNumParAnexo" id="nuevoNumParAnexo">
-                    </div>
+                 </div>
                 </div>
               </div>
             </div>
@@ -457,7 +457,7 @@
             </div>
             <div class="box-body">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-sm-12 col-md-12 col-lg-6">
                   <!-- Armado del Juego -->
                   <label>Armado del Juego</label>
                   <div class="input-group">
@@ -465,7 +465,7 @@
                     <textarea class="form-control" name="nuevoNumParAramadoJuego" id="nuevoNumParAramadoJuego"></textarea>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-12 col-md-12 col-lg-6">
                   <!-- Armado del Juego -->
                   <label>Anexo del Armado</label>
                   <div class="input-group">
@@ -520,7 +520,7 @@
             </div>
             <div class="box-body">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-sm-4 col-md-6 col-lg-4">
                   <!-- Armado del Juego -->
                   <label>Shim</label>
                   <div class="input-group">
@@ -532,7 +532,7 @@
                     </select>
                   </div>  
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4 col-md-6 col-lg-4">
                   <!-- Armado del Juego -->
                   <label>Abutment</label>
                   <div class="input-group">
@@ -544,7 +544,7 @@
                     </select>
                   </div>  
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4 col-md-6 col-lg-4">
                   <!-- Armado del Juego -->
                   <label>Accesorio Electronio</label>
                   <div class="input-group">
@@ -576,14 +576,14 @@
             </div>
             <div class="box-body">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-sm-4 col-md-6 col-lg-4">
                   <label>N° Poliolefina</label>
                     <div class="input-group">
                       <span class="input-group-addon"><i class="fa fa-dot-circle-o"></i></span>
                       <input type="text" class="form-control" name="nuevoNumParPoliolefina" id="nuevoNumParPoliolefina">
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4 col-md-6 col-lg-4">
                   <label>N° Caja</label>
                     <div class="input-group">
                       <span class="input-group-addon"><i class="fa fa-dot-circle-o"></i></span>
@@ -685,3 +685,5 @@
     </div>
   </div>
 </div>
+
+           

@@ -295,53 +295,6 @@ $(".tableBacklogCana").on("click", "#btnProgramarNPart", function(){
 
 /*=============================================
 =            Section comment block            =
-  Hola
-
-  Quiero comentarte que estoy enamorado de una maravillosa y fantastica mujer, y que le doy gracias a Dios por haber la puesto en mi
-  camino y no solo en mi camino que me permitio conocerla y desde el momento que empeze a conocerte senti algo pordentro que no puedo
-  explicar y pasando los dias las platicas, las risas, fuen naciendo algo que no pude controlar un sentimiento tan lindo tan bonito 
-  que se desvorda cuando te veo, tu Michell Tu eres mi cielo y sabes es tan dificl poder describir exactamente lo que siente, que solo
-  se que muero por ti, que no me di cuenta en que momento te metiste tan dentro de mi que todo lo que esperava del amor lo estoy 
-  encontrando en ti, y escribo todo esto por que no sales de mi mente y que te as de imaginar por donde voy que solo con tigo me 
-  salen la plabras que nucna pesne que podia decir, por que quiero sacarte uno y mil suspiros y yo se que no soy experto en el amor,
-  que muero por amarte y que quiero disfritar del amarte poco a poco de la forma mas linda que pueda existir y creeme que e pensado
-  que llege algo tarde a tu vida que me hubera gustado coconocerte antes pero a hora que ya estas en mi corazon y no solo en mi corazon 
-  ya te siento parte de mi, ya te siento parte de mi ecencia, que me encanta respirar por tus labios y que me robes el aliento,
-  que no puedo creer que con un beso una caricia te pueda entregar mi voluntad, que con tan solo eso me puedas desarmar por completo 
-  de pies a cabeza, que cada vez que sueño tu apareces en ellos que me encanta tu risa, tus ojos, el fleco de tu pelo, que sueño por 
-  volverte a tener dormida entre mis brazos y poder mirate en ese silencion tan bonito donde solo estas tu y esos tiempos con tigo son 
-  perfectos 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  yo se que que cuesta trabajo creer que una persona se puede meter tanto pero tanto en una persona, al grado que le resulte hacer
-  cualquier cosa ya sea cotidiana o fuera de lo cotidiano y esa persona apararesca en su mente y que con el simple echo de pestañear
-  llegue en su mente empieze a recordar y verla en su mente y que su cerebro produce tantas hormonas que en una mescla de dopamina, 
-  norepinefrina,  feniletilamina, norepinefrina y oxitocina que convinadas tiene el efecto de la dorga mas adictiva con el simple echo
-  de pensar en ella, y este efecto solo lo prvoca una persona, una persona que es maravillora que la plabra se queda corta, Michell 
-  Lechuga Martinez recordemos un poco no se como paso 
 =============================================*/
 
 

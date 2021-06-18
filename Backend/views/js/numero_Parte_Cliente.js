@@ -508,6 +508,8 @@ $(".nuevoNumParPDFEmpaque").change(function () {
     =  Valida Formulario EnviarNuevoProducto    =
     =============================================*/
 $(document).on('click', '#btnEnviarNuevoProducto', function() {
+
+  
   // Valida Numero de Parte AMB
   if ($("#nuevoNumParAMB").val() == "") {
       $("#nuevoNumParAMB").closest('.col-md-2').removeClass("form-group has-success");

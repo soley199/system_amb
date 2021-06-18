@@ -8,7 +8,7 @@
 				</a>
 			</li>
 			<?php 
-			if ($_SESSION["usuario"]["Nombre"] == 3 || $_SESSION["usuario"]["Nombre"] == 1) :
+			if ($_SESSION["usuario"]["Id_Perfil"] == 3 || $_SESSION["usuario"]["Id_Perfil"] == 1) :
 			?>
 			<li class="treeview">
 				<a href="#">
@@ -138,6 +138,32 @@
 					</li>
 				</ul>
 			</li>
+
+			<li class="treeview">
+				<a href="#">
+					<i class="fa fa-flask"></i>
+					<span>Laboratorio</span>
+					<span class="pull-right-container">
+						<i class="fa fa-angle-left pull-right"></i>
+
+					</span>
+				</a>
+				<ul class="treeview-menu">
+					<li>
+						<a href="labLiberaciones">
+							<i class="fa fa-circle-o"></i>
+							<span>Liberaciones</span>
+						</a>
+					</li>
+					<li>
+						<a href="labListaMateriasPrimas">
+							<i class="fa fa-circle-o"></i>
+							<span>Materias Primas</span>
+						</a>
+					</li>
+					
+				</ul>
+			</li>
 			
 			<li class="treeview">
 	          <a href="#">
@@ -166,6 +192,28 @@
 					</a>
 				</li>
 
+	          </ul>
+        	</li>
+        	<li class="treeview">
+	          <a href="#">
+	            <i class="fa  fa-trophy"></i> <span>DPTO. Calidad</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li>
+					<a href="proveedores">
+						<i class="fa fa-circle-o"></i>
+						<span>Rebicion Material</span>
+					</a>
+				</li>
+	            <li>
+					<a href="adminVentas">
+						<i class="fa fa-circle-o"></i>
+						<span>Mescalas</span>
+					</a>
+				</li>
 	          </ul>
         	</li>
 
@@ -202,7 +250,12 @@
 					<span>Producciòn</span>
 					</a>
 				</li>
-
+				<li>
+					<a href="segimientoOrden">
+					<i class="fa fa-circle-o"></i>
+					<span>Embarque</span>
+					</a>
+				</li>
 	          </ul>
         	</li>
 			<!-- <li class="">
