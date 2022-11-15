@@ -72,7 +72,7 @@ echo "</script>";
         <h1>Seguimiento de Materiales</h1>
         <ol class="breadcrumb">
           <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
-          <li class="active">Materiales Cerrados</li>
+          <li class="active">Seguimiento de Materiales</li>
         </ol>
       </section>
       <section class="content">

@@ -19,6 +19,7 @@
 	require_once "models/numeroParteCliente.modelo.php";
 	require_once "models/Formulaciones.modelo.php";
 	require_once "models/backlog.modelo.php";
+	require_once "models/moduloExpres.modelo.php";
 
 	require_once "controllers/plantilla.controlador.php";
 	require_once "controllers/usuarios.controlador.php";
@@ -40,6 +41,7 @@
 	require_once "controllers/numeroParteCliente.controlador.php";
 	require_once "controllers/Formulaciones.controlador.php";
 	require_once "controllers/backlog.controlador.php";
+	require_once "controllers/moduloExpres.controlador.php";
 
 
 $plantilla = new ControladorPlantilla();

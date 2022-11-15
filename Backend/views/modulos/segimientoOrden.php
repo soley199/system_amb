@@ -14,12 +14,70 @@
     <!-- Main content -->
     <section class="content">
       <ul class="nav nav-tabs">
-          <li class="active"><a data-toggle="tab" href="#tabAreas">Areas</a></li>
-          <li><a data-toggle="tab" href="#tabSegIndividual">Seguimiento Individual</a></li>
+        <li class="active"><a data-toggle="tab" href="#tabSeguiTo">Seguimiento</a></li>
+        <li><a data-toggle="tab" href="#tabAreas">Areas</a></li>
+        <li><a data-toggle="tab" href="#tabSegIndividual">Seguimiento Individual</a></li>
       </ul>
 
       <div class="tab-content">
-        <div class="tab-pane fade in active" id="tabAreas">
+
+        <div class="tab-pane fade in active" id="tabSeguiTo">
+          <div class="box">
+            <div class="box-header witd-border">
+              <h3 class="box-title">Ordenes en proceso de fabricación</h3><br><br>
+              <button class=" btn btn-primary">Agreagrar Ordenes</button>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                        title="Collapse">
+                  <i class="fa fa-minus"></i></button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+                  <i class="fa fa-times"></i></button>
+              </div>
+            </div>
+
+            <div class="box-body">
+              <div class="box-body">
+                <table class="table table-bordered table-striped tableSeguimiento" width="100%">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th># Fabricacion</th>
+                      <th>Cliente</th>
+                      <th># Parte AMB</th>
+                      <th>Zapata</th>
+                      <th>Mezcla</th>
+                      <th>Piezas</th>
+                      <th>Planta</th>
+                      <th>Item</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+            <div class="box-footer">Footer</div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="tab-pane fade in" id="tabAreas">
           <div class="box">
             <div class="box-header witd-border">
               <h3 class="box-title">Areas</h3>
@@ -124,7 +182,7 @@
                   </div>
                 </div>
               </div>
-            </div>0
+            </div>
             <div class="box-footer">Footer</div>
           </div>
         </div>

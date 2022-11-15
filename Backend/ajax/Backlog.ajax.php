@@ -3,6 +3,8 @@
 	require_once '../models/hojaingenieria.modelo.php';
 
 	require_once '../models/conexion.php';
+	require_once'../extenciones/Leer_Php/PHPExcel.php';
+	require_once'../extenciones/Leer_Php/PHPExcel/IOFactory.php';
 	
 	// echo '</table>';
 

@@ -153,7 +153,7 @@ class ControladorTrabajador
 			 				"Id_Estatus" => $_POST["nuevoEstatusTraba"],
 			 				"Sexo" => $_POST["nuevoGeneroTraba"],
 			 				"Foto" => $ruta);
-			 var_dump($datos);
+			 // var_dump($datos);
 			 $respuesta = ModeloTrabajadores::MdlIngresarTrabajador($tabla,$datos);
 			 var_dump($respuesta);
 			 if ($respuesta == "ok") {

@@ -26,6 +26,9 @@
       =  PRIMERA SECCION DE OPCIONES          =
       ======================================-->
         <div class="row">
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 || $_SESSION["usuario"]["Id_Perfil"] == 15) :
+          ?>
           <div class="col-lg-2 col-sm-6 col-xs-12">
           <!-- small box -->
             <div class="small-box bg-blue">
@@ -40,7 +43,10 @@
               <a href="materialRuta" class="small-box-footer">Material en Ruta <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
-        
+          <?php endif ?>
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 || $_SESSION["usuario"]["Id_Perfil"] == 3) :
+          ?>
           <!-- ./col -->
          <div class="col-lg-2 col-sm-6 col-xs-12">
           <!-- small box -->
@@ -55,7 +61,10 @@
               <a href="trabajadores" class="small-box-footer">Recursos Humanos <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
-        
+          <?php endif ?>
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 || $_SESSION["usuario"]["Id_Perfil"] == 8 || $_SESSION["usuario"]["Id_Perfil"] == 12) :
+          ?>
           <!-- ./col -->
           <div class="col-lg-2 col-sm-6 col-xs-12">
           <!-- small box -->
@@ -70,6 +79,10 @@
               <a href="numero_Parte_Clinente" class="small-box-footer">Ing. del Producto<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          <?php endif ?>
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 || $_SESSION["usuario"]["Id_Perfil"] == 11) :
+          ?>
           <div class="col-lg-2 col-sm-6 col-xs-12">
             <!-- small box -->
             <div class="small-box bg-olive">
@@ -83,6 +96,10 @@
               <a href="laboratorio" class="small-box-footer">Laboratorio <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          <?php endif ?>
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 ) :
+          ?>
           <!-- ./col -->
           <div class="col-lg-2 col-sm-6 col-xs-12">
             <!-- small box -->
@@ -97,7 +114,11 @@
               <a href="usuarios" class="small-box-footer">Usuarios <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          <?php endif ?>
           <!-- ./col -->
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 || $_SESSION["usuario"]["Id_Perfil"] == 2 ) :
+          ?>
           <div class="col-lg-2 col-sm-6 col-xs-12">
             <!-- small box -->
             <div class="small-box bg-olive">
@@ -111,11 +132,15 @@
               <a href="proveedores" class="small-box-footer">Provedores <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          <?php endif ?>
         </div>
         <!--=====================================
         =  SEGUNDA SECCION DE OPCIONES          =
         ======================================-->
         <div class="row">
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 || $_SESSION["usuario"]["Id_Perfil"] == 15 ) :
+          ?>
           <div class="col-lg-2 col-sm-6 col-xs-12">
             <!-- small box -->
             <div class="small-box bg-olive">
@@ -129,7 +154,11 @@
               <a href="recepcionMaterial" class="small-box-footer">Reccción Marterial <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          <?php endif ?>
           <!-- ./col -->
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 || $_SESSION["usuario"]["Id_Perfil"] == 14 ) :
+          ?>
           <div class="col-lg-2 col-sm-6 col-xs-12">
             <!-- small box -->
             <div class="small-box bg-blue">
@@ -143,6 +172,11 @@
               <a href="almacenMateriaPrima" class="small-box-footer">Zapata Y Accesorios<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          <?php endif ?>
+
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 || $_SESSION["usuario"]["Id_Perfil"] == 15 || $_SESSION["usuario"]["Id_Perfil"] == 17 ) :
+          ?>
           <!-- ./col -->
           <div class="col-lg-2 col-sm-6 col-xs-12">
             <!-- small box -->
@@ -157,6 +191,10 @@
               <a href="" class="small-box-footer">Encargado de Almacen <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          <?php endif ?>
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 || $_SESSION["usuario"]["Id_Perfil"] == 15 || $_SESSION["usuario"]["Id_Perfil"] == 18 || $_SESSION["usuario"]["Id_Perfil"] == 17 ) :
+          ?>
           <div class="col-lg-2 col-sm-6 col-xs-12">
             <!-- small box -->
             <div class="small-box bg-blue">
@@ -170,6 +208,10 @@
               <a href="" class="small-box-footer">Producción Disco <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          <?php endif ?>
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 || $_SESSION["usuario"]["Id_Perfil"] == 13 ) :
+          ?>
           <div class="col-lg-2 col-sm-6 col-xs-12">
             <!-- small box -->
             <div class="small-box bg-olive">
@@ -183,6 +225,10 @@
               <a href="aseguramientoCalidad" class="small-box-footer">Aseguramiento Calidad <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+           <?php endif ?>
+           <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 || $_SESSION["usuario"]["Id_Perfil"] == 14 ) :
+          ?>
           <div class="col-lg-2 col-sm-6 col-xs-12">
             <!-- small box -->
             <div class="small-box bg-blue">
@@ -196,11 +242,15 @@
               <a href="segimientoOrden" class="small-box-footer">Seguimiento <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          <?php endif ?>
         </div>
         <!--=====================================
         =  Tercera Seccion SECCION DE OPCIONES          =
         ======================================-->
         <div class="row">
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 ) :
+          ?>
           <div class="col-lg-2 col-sm-6 col-xs-12">
             <!-- small box -->
             <div class="small-box bg-blue">
@@ -214,7 +264,11 @@
               <a href="recepcionMaterial" class="small-box-footer">Reccción Marterial <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          <?php endif ?>
           <!-- ./col -->
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 ) :
+          ?>
           <div class="col-lg-2 col-sm-6 col-xs-12">
             <!-- small box -->
             <div class="small-box bg-olive">
@@ -228,6 +282,10 @@
               <a href="almacenMateriaPrima" class="small-box-footer">Zapata Y Accesorios<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          <?php endif ?>
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 ) :
+          ?>
           <!-- ./col -->
           <div class="col-lg-2 col-sm-6 col-xs-12">
             <!-- small box -->
@@ -242,6 +300,10 @@
               <a href="" class="small-box-footer">Encargado de Almacen <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          <?php endif ?>
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 ) :
+          ?>
           <div class="col-lg-2 col-sm-6 col-xs-12">
             <!-- small box -->
             <div class="small-box bg-olive">
@@ -255,6 +317,10 @@
               <a href="" class="small-box-footer">Producción Disco <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          <?php endif ?>
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 ) :
+          ?>
           <div class="col-lg-2 col-sm-6 col-xs-12">
             <!-- small box -->
             <div class="small-box bg-blue">
@@ -268,6 +334,10 @@
               <a href="aseguramientoCalidad" class="small-box-footer">Aseguramiento Calidad <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          <?php endif ?>
+          <?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 ) :
+          ?>
           <div class="col-lg-2 col-sm-6 col-xs-12">
             <!-- small box -->
             <div class="small-box bg-olive">
@@ -281,6 +351,7 @@
               <a href="segimientoOrden" class="small-box-footer">Seguimiento <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          <?php endif ?>
         </div>
         
       </div>
@@ -290,6 +361,9 @@
 <!--=====================================
 =            Graficas          =
 ======================================-->
+<?php 
+          if ( $_SESSION["usuario"]["Id_Perfil"] == 1 ) :
+          ?>
     <div class="row">
       <div class="col-md-6">
         <div class="box box-success">
@@ -342,5 +416,6 @@
         </div>
       </div>
     </div>
+    <?php endif ?>
   </section>
 </div>

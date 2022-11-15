@@ -164,6 +164,9 @@
           $_GET["ruta"] == 'simulador' ||
           $_GET["ruta"] == 'segimientoOrden' ||
           $_GET["ruta"] == 'crearSimulacion' ||
+          $_GET["ruta"] == 'moduloEmbarque' ||
+          $_GET["ruta"] == 'moduloCalidad'  ||
+          $_GET["ruta"] == 'printAuditaCalidad' ||
           $_GET["ruta"] == 'salir') {
         include "modulos/".$_GET["ruta"].".php";
       }else{
@@ -175,7 +178,12 @@
     /*=============================================
     =            Contenido        =
     =============================================*/
-    include "modulos/footer.php";
+    if ($_GET["ruta"] == 'printAuditaCalidad') {
+      
+    }else{
+      include "modulos/footer.php";
+    }
+    
     echo '</div>';
   } else {
     include "modulos/login.php";
@@ -202,6 +210,9 @@
 <script src="views/js/numero_Parte_Cliente.js"></script>
 <script src="views/js/Backlog.js"></script>
 <script src="views/js/formula.js"></script>
+<script src="views/js/SegimientoOrden.js"></script>
+
+<script src="views/js/ModuloExpres.js"></script>
 
 </body>
 </html>

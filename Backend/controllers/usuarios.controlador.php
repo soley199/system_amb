@@ -9,7 +9,7 @@ class ControlleUsuarios
 		if(isset($_POST["ingUsuario"])){
 					
 			if(preg_match('/^[a-zA-Z0-9]+$/', $_POST["ingUsuario"]) &&
-			   preg_match('/^[a-zA-Z0-9]+$/', $_POST["ingPassword"])) {
+			   preg_match('/^[a-zA-Z0-9.]+$/', $_POST["ingPassword"])) {
 
 			   	$encriptar = crypt($_POST["ingPassword"],'$2a$07$usesomesillystringforsalt$');
 				
@@ -79,7 +79,7 @@ class ControlleUsuarios
 		if (isset($_POST["nuevoNumTarjeta"])) {
 			
 			if (preg_match('/^[a-zA-Z0-9]+$/',$_POST["nuevoNumTarjeta"]) &&
-				preg_match('/^[a-zA-Z0-9]+$/',$_POST["nuevoPassword"])) {
+				preg_match('/^[a-zA-Z0-9.]+$/',$_POST["nuevoPassword"])) {
 				/*=============================================
 				Validar Imagen
 				=============================================*/

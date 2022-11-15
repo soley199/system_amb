@@ -7,6 +7,7 @@ class ControladorEncuesta{
 	
 	static public function InsertarEncuesta(){
 		if (isset($_POST["optionsRadios1"])) {	
+			var_dump("Error entro otro IF");
 			$tabla = "encuesta";
 			$datos = array('preg_1' => $_POST["optionsRadios1"] ,
 						   'preg_2' => $_POST["optionsRadios2"] ,
@@ -81,8 +82,10 @@ class ControladorEncuesta{
 						   'preg_71' => $_POST["optionsRadios71"] ,
 						   'preg_72' => $_POST["optionsRadios72"]
 						);
-			// var_dump($datos);
+			var_dump($datos);
 			$respuesta = ModeloEncuesta::MdlAgregarEncuesta($tabla,$datos);
+			var_dump($respuesta);
+			return die();
 			if ($respuesta == "ok") {
 				echo '<script>
 						swal({
@@ -106,6 +109,80 @@ class ControladorEncuesta{
 		
 	}
 	}
+
+	static public function InsertarEncuestaClima(){
+
+			if (isset($_POST["optionsRadios1"])) {
+				$tabla = "encuestacl";
+				$datos = array('preg_1' => $_POST["optionsRadios1"] ,
+							   'preg_2' => $_POST["optionsRadios2"] ,
+							   'preg_3' => $_POST["optionsRadios3"] ,
+							   'preg_4' => $_POST["optionsRadios4"] ,
+							   'preg_5' => $_POST["optionsRadios5"] ,
+							   'preg_6' => $_POST["optionsRadios6"] ,
+							   'preg_7' => $_POST["optionsRadios7"] ,
+							   'preg_8' => $_POST["optionsRadios8"] ,
+							   'preg_9' => $_POST["optionsRadios9"] ,
+							   'preg_10' => $_POST["optionsRadios10"] ,
+							   'preg_11' => $_POST["optionsRadios11"] ,
+							   'preg_12' => $_POST["optionsRadios12"] ,
+							   'preg_13' => $_POST["optionsRadios13"] ,
+							   'preg_14' => $_POST["optionsRadios14"] ,
+							   'preg_15' => $_POST["optionsRadios15"] ,
+							   'preg_16' => $_POST["optionsRadios16"] ,
+							   'preg_17' => $_POST["optionsRadios17"] ,
+							   'preg_18' => $_POST["optionsRadios18"] ,
+							   'preg_19' => $_POST["optionsRadios19"] ,
+							   'preg_20' => $_POST["optionsRadios20"] ,
+							   'preg_21' => $_POST["optionsRadios21"] ,
+							   'preg_22' => $_POST["optionsRadios22"] ,
+							   'preg_23' => $_POST["optionsRadios23"] ,
+							   'preg_24' => $_POST["optionsRadios24"] ,
+							   'preg_25' => $_POST["optionsRadios25"] ,
+							   'preg_26' => $_POST["optionsRadios26"] ,
+							   'preg_27' => $_POST["optionsRadios27"] ,
+							   'preg_28' => $_POST["optionsRadios28"] ,
+							   'preg_29' => $_POST["optionsRadios29"] ,
+							   'preg_30' => $_POST["optionsRadios30"] ,
+							   'preg_31' => $_POST["optionsRadios31"] ,
+							   'preg_32' => $_POST["optionsRadios32"] ,
+							   'preg_33' => $_POST["optionsRadios33"] ,
+							   'preg_34' => $_POST["optionsRadios34"] ,
+							   'preg_35' => $_POST["optionsRadios35"] ,
+							   'preg_36' => $_POST["optionsRadios36"] ,
+							   'preg_37' => $_POST["optionsRadios37"] ,
+							   'preg_38' => $_POST["optionsRadios38"] ,
+							   'preg_39' => $_POST["Pregunta39"] ,
+							   'preg_40' => $_POST["Pregunta40"] ,
+							   'preg_41' => $_POST["Pregunta41"]
+							);
+				
+				$respuesta = ModeloEncuesta::MdlAgregarEncuestaClima($tabla,$datos);
+				var_dump($respuesta);
+				if ($respuesta == "ok") {
+					echo '<script>
+							swal({
+								type: "success",
+								title:"Su Encuesta se a guardado Correcta Mente",
+								showConfirmButton: true,
+								confirmButtonText: "Cerrar",
+								CloseOnComfirm:false
+
+								}).then((result)=>{
+									if(result.value){
+										window.location = "encuClimaLaboral";
+									}
+
+								});	
+						 </script>';
+				} else {
+					var_dump($respuesta);
+				}
+
+
+			}
+
+		}
 	}
 
 

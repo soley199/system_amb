@@ -3,7 +3,7 @@
   =============================================*/
   var table = $(".tablaTarbajador").DataTable({
         // "scrollY": 400,
-        // "scrollX": true,
+        "scrollX": true,
     "ajax":"ajax/tabla.trabajadores.ajax.php",
     "columnDefs": [
     {

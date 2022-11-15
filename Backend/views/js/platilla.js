@@ -81,6 +81,23 @@ $('.NumeroGuion').on('input', function () {
  	autoclose: true
     });
 
+ $('#datepickeridPallet').datepicker({
+   autoclose: true
+ });
+
+  $('#datepickeridPalletedita').datepicker({
+   autoclose: true
+ });
+   /*=============================================
+    =  RECARGAR PAGINA Modulo expres calidad         =
+    =============================================*/
+    $(document).on('click', '#btnrecargarMSA', function() {
+      window.location = "index.php?ruta=moduloCalidad&Tab=NOauditado";
+    });
+    $(document).on('click', '#btnrecargarMA', function() {
+      window.location = "index.php?ruta=moduloCalidad&Tab=matAuditado";
+    });
+
     /*=============================================
     =  RECARGAR PAGINA         =
     =============================================*/

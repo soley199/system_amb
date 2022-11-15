@@ -11,7 +11,6 @@
 		$respuesta = ModeloHojaIngenieria::MdlBuscarHojaIngItem($tabla,$Columna, $ITEM, $Id_Cliente);
 
 		return $respuesta;
-
 	}
 
 	/*=============================================
@@ -73,7 +72,6 @@
 		$tabla = "shim";
 
 		$respuesta = ModeloHojaIngenieria::MdlBuscarHojaIngShim($tabla,$ColumnaShim, $ITEM);
-
 		return $respuesta;
 	}
 	/*=============================================
@@ -105,7 +103,4 @@
 		$respuesta = ModeloHojaIngenieria::MdlBuscarAmbClienteHojaIngBacklog($tabla, $item, $valor, $cliente);
 		return $respuesta;
 	}
-
- 	
- 	
  } 

@@ -41,10 +41,15 @@
 				</ul>
 			</li>
 			<?php endif ?>
-			<!-- <li class="treeview">
+
+			<?php 
+			if ($_SESSION["usuario"]["Id_Perfil"] == 13 || $_SESSION["usuario"]["Id_Perfil"] == 1 || $_SESSION["usuario"]["Id_Perfil"] == 14) :
+			?>
+
+			<li class="treeview">
 				<a href="#">
-					<i class="fa fa-file-powerpoint-o"></i>
-					<span>DPTO. Producción Disco</span>
+					<i class="fa fa-star"></i>
+					<span>ModuloExpres</span>
 					<span class="pull-right-container">
 						<i class="fa fa-angle-left pull-right"></i>
 
@@ -52,38 +57,25 @@
 				</a>
 				<ul class="treeview-menu">
 					<li>
-						<a href="clientes">
+						<a href="moduloEmbarque">
 							<i class="fa fa-circle-o"></i>
-							<span>Producción</span>
+							<span>Embarque</span>
 						</a>
 					</li>
 					<li>
-						<a href="hojaIngenieria">
+						<a href="moduloCalidad">
 							<i class="fa fa-circle-o"></i>
-							<span>Tarjetas de Ing.</span>
-						</a>
-					</li>
-					<li>
-						<a href="numeroNuevos">
-							<i class="fa fa-circle-o"></i>
-							<span>Numeros de Parte</span>
-						</a>
-					</li>
-					<li>
-						<a href="specCliente">
-							<i class="fa fa-circle-o"></i>
-							<span>Espec. Clientes</span>
-						</a>
-					</li>
-					<li>
-						<a href="tablascompartidas">
-							<i class="fa fa-circle-o"></i>
-							<span>Tablas Compartidas</span>
+							<span>Calidad</span>
 						</a>
 					</li>
 				</ul>
-			</li> -->
-			
+			</li>
+
+			<?php endif ?>
+
+			<?php 
+			if ( $_SESSION["usuario"]["Id_Perfil"] == 1) :
+			?>
 			<li class="treeview">
 				<a href="#">
 					<i class="fa fa-file-powerpoint-o"></i>
@@ -138,6 +130,11 @@
 					</li>
 				</ul>
 			</li>
+			<?php endif ?>
+
+			<?php 
+			if ( $_SESSION["usuario"]["Id_Perfil"] == 1 || $_SESSION["usuario"]["Id_Perfil"] == 11) :
+			?>
 
 			<li class="treeview">
 				<a href="#">
@@ -164,6 +161,12 @@
 					
 				</ul>
 			</li>
+
+			<?php endif ?>
+
+			<?php 
+			if ( $_SESSION["usuario"]["Id_Perfil"] == 1) :
+			?>
 			
 			<li class="treeview">
 	          <a href="#">
@@ -194,6 +197,11 @@
 
 	          </ul>
         	</li>
+        	<?php endif ?>
+
+        	<?php 
+			if ( $_SESSION["usuario"]["Id_Perfil"] == 1 || $_SESSION["usuario"]["Id_Perfil"] == 13) :
+			?>
         	<li class="treeview">
 	          <a href="#">
 	            <i class="fa  fa-trophy"></i> <span>DPTO. Calidad</span>
@@ -203,21 +211,24 @@
 	          </a>
 	          <ul class="treeview-menu">
 	            <li>
-					<a href="proveedores">
+					<a href="#">
 						<i class="fa fa-circle-o"></i>
 						<span>Rebicion Material</span>
 					</a>
 				</li>
 	            <li>
-					<a href="adminVentas">
+					<a href="#">
 						<i class="fa fa-circle-o"></i>
 						<span>Mescalas</span>
 					</a>
 				</li>
 	          </ul>
         	</li>
+        	<?php endif ?>
 
-        	
+        	<?php 
+			if ( $_SESSION["usuario"]["Id_Perfil"] == 1 || $_SESSION["usuario"]["Id_Perfil"] == 14) :
+			?>
         	<li class="treeview">
 	          <a href="#">
 	            <i class="fa fa-bar-chart-o"></i> <span>Produccion Disco</span>
@@ -258,6 +269,8 @@
 				</li>
 	          </ul>
         	</li>
+
+        	<?php endif ?>
 			<!-- <li class="">
 				<a href="clientes">
 					<i class="fa fa-user"></i>
@@ -368,6 +381,9 @@
 
 				</ul>
 			</li> -->
+			<?php 
+			if ( $_SESSION["usuario"]["Id_Perfil"] == 1) :
+			?>
 		
 			<li class="">
 				<a href="usuarios">
@@ -375,6 +391,7 @@
 					<span>Usuarios</span>
 				</a>
 			</li>
+			<?php endif ?>
 		</ul>
 
 	</section>

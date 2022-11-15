@@ -48,7 +48,7 @@
           <!-- small box -->
           <div class="small-box bg-yellow">
             <div class="inner">
-              <a href="RHencuesta" style="color: #fff;">
+              <a href="encuestas" style="color: #fff;">
               <h3 >Encuestas</h3>
 
               <p>Recursos Humanos</p>
@@ -57,7 +57,7 @@
             <div class="icon">
               <i class="ion ion-ios-paper"></i>
             </div>
-            <a href="segMateriales" class="small-box-footer">Acceder <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="encuestas" class="small-box-footer">Acceder <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->

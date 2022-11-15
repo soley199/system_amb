@@ -774,7 +774,7 @@ $(document).on('click', '#btnGuardarFactura', function(){
     }).then((result)=>{
       if (result.value) {
         // document.modal_editar_material_ruta.submit()
-        document.getElementById("modal_guardar_material_ruta").submit();
+        document.getElementById("modal_guardar_pallet").submit();
       } else {}
     })
 });
