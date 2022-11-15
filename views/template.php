@@ -134,6 +134,7 @@
           $_GET["ruta"] == 'segMateriales' ||
           $_GET["ruta"] == 'encuestas' ||
           $_GET["ruta"] == 'encuClimaLaboral' ||
+          $_GET["ruta"] == 'encu360' ||
           $_GET["ruta"] == 'salir') {
         include "modulos/".$_GET["ruta"].".php";
       }else{
@@ -176,6 +177,7 @@
 <script src="views/js/Backlog.js"></script>
 <script src="views/js/formula.js"></script>
 <script src="views/js/encuClima.js"></script>
+<script src="views/js/encuClima360.js"></script>
 
 <!-- <script src="views/js/platilla.js"></script> -->
 

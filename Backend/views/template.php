@@ -167,6 +167,7 @@
           $_GET["ruta"] == 'moduloEmbarque' ||
           $_GET["ruta"] == 'moduloCalidad'  ||
           $_GET["ruta"] == 'printAuditaCalidad' ||
+          $_GET["ruta"] == 'encu360' ||
           $_GET["ruta"] == 'salir') {
         include "modulos/".$_GET["ruta"].".php";
       }else{
