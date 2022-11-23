@@ -22,6 +22,5 @@
 			$link->exec("set names utf8");
 
 			return $link;
-		
 		}
 	}

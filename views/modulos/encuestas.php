@@ -49,7 +49,7 @@
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
-              <a href="encu360" style="color: #fff;">
+              <a href="encu360Per" style="color: #fff;">
               <h3>ENCUESTA 360°</h3>
 
               <p>Encuesta</p>
@@ -58,7 +58,7 @@
             <div class="icon">
               <i class="ion ion-document"></i>
             </div>
-            <a href="encu360" class="small-box-footer">Acceder <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="encu360Per" class="small-box-footer">Acceder <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
       </div>

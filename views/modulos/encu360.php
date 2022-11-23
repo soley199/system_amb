@@ -30,20 +30,9 @@
                 <div class="col-md-12 ">
                     <h2>EVALUACION 360°</h2>
                     <blockquote>
-                        <p class="text-center text-justify">El propósito de esta encuesta es analizar la forma en que el personal de la empresa percibe el ambiente de trabajo en el que se desempeña, de esta manera con la colaboración de todos podemos mejorar nuestro entorno laboral a través de sus opiniones y sugerencias.<br>
-                        Recuerda que las respuestas son opciones basadas en tu experiencia de trabajo actual, por lo tanto, <strong><ins>no hay respuestas correctas ni incorrectas.</ins></strong></p> 
+                        <p class="text-center text-justify">Colaborador, la siguiente encuesta tiene la finalidad de obtener una retroalimentación integral del trabajador evaluado con el objetivo de mejorar su desempeño a través de la obtención de información desde distintos puntos de vista mediante las relaciones de comunicación del puesto. Favor de responder cada una de las secciones desde un enfoque objetivo seleccionando la opción más acertada para responder a cada cuestión.</p> 
 
-                        <p class="text-center text-justify"><strong>Instrucciones</strong><br></p>
-
-                        <p class="text-center text-justify">Por favor, te pedimos que Leas cuidadosamente cada una de las afirmaciones y marques el número que describa mejor tu opinión, con base en la escala siguente:</p> 
-
-                        <ul  class="text-center text-justify">
-                        <li> 5 Totalmente de acuerdo.</li>
-                        <li> 4 De acuerdo pero puede mejorar.</li>
-                        <li> 3 Neutral (ni acuerdo ni desacuerdo).</li>
-                        <li> 2 En desacuerdo con algunos puntos.</li>
-                        <li> 1 Totalmente en desacuerdo.</li>
-                        </ul> 
+                        
                     </p> 
                     </blockquote>
                 </div>

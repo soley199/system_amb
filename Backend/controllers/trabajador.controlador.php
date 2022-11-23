@@ -1,5 +1,4 @@
-<?php 
-
+<?php
 class ControladorTrabajador
 {
 		/*=============================================
@@ -79,7 +78,7 @@ class ControladorTrabajador
 				=============================================*/
 
 				$ruta= "";
-				if (isset($_FILES["nuevaFotoTraba"]["tmp_name"])) {
+				if (!empty($_FILES['nuevaFotoTraba']['tmp_name'])) {
 				list($ancho,$alto) = getimagesize($_FILES["nuevaFotoTraba"]["tmp_name"]);
 					$nuevoAncho = 500;
 					$nuevoAlto = 500;
@@ -127,16 +126,12 @@ class ControladorTrabajador
 				// imagecopyresized(dst_image, src_image, dst_x, dst_y, src_x, src_y, dst_w, dst_h, src_w, src_h)
 				imagecopyresized($destino, $origen, 0, 0, 0, 0, $nuevoAncho, $nuevoAlto, $ancho, $alto);
 				imagepng($destino,$ruta);
-					
 				}
-						
 			}else{
-				
 			}
 			if ($ruta == "") {
 				$ruta = "views/img/usuarios/default/anonimus.svg";
 			}
-			
 				$tabla= "empleado";
 				$Id = "Id_Empleado";
 				$Id_Empleado = ModeloRHCategorias::mdlRecuperarConsecutivo($tabla,$Id);
@@ -169,14 +164,12 @@ class ControladorTrabajador
 								if(result.value){
 									window.location = "trabajadores";
 								}
-
-							});	
+							});
 					 </script>';
 					 $ConsecutivoActualizar = ModeloRHCategorias::mdlActualizarConsecutivo($tabla,$datos);
 			 } else {
 			 	var_dump($respuesta);
 			 }
-			 
 			} else {
 				echo '<script>
 						swal({
@@ -195,13 +188,9 @@ class ControladorTrabajador
 
 					 </script>';
 			}
-			
 		} else {
-			
 		}
-		
-	} 
-
+	}
 
 	/*=============================================
 	=            ACTUALIZAR  EMPLEADO     =
@@ -227,7 +216,6 @@ class ControladorTrabajador
 				=============================================*/
 
 				// if (file_exists($directorio)) {
-				    
 				// } else {
 				//     mkdir($directorio,0755);;
 				// }
@@ -237,10 +225,8 @@ class ControladorTrabajador
 				=============================================*/
 				if (!empty($_POST["fotoActualTrab"])) {
 					unlink($_POST["fotoActualTrab"]);
-					
 				} else {
 					mkdir($directorio,0755);
-					
 				}
 				/*=============================================
 				Deacurdo al tipo de imagen aplicamoslas funciones por defecto de php
@@ -262,7 +248,6 @@ class ControladorTrabajador
 					// imagecopyresized(dst_image, src_image, dst_x, dst_y, src_x, src_y, dst_w, dst_h, src_w, src_h)
 					imagecopyresized($destino, $origen, 0, 0, 0, 0, $nuevoAncho, $nuevoAlto, $ancho, $alto);
 					imagejpeg($destino,$ruta);
-					
 				}
 				if ($_FILES["editarFotoTraba"]["type"] == "image/png") {
 					/*=============================================
@@ -280,7 +265,6 @@ class ControladorTrabajador
 					// imagecopyresized(dst_image, src_image, dst_x, dst_y, src_x, src_y, dst_w, dst_h, src_w, src_h)
 					imagecopyresized($destino, $origen, 0, 0, 0, 0, $nuevoAncho, $nuevoAlto, $ancho, $alto);
 					imagepng($destino,$ruta);
-					
 				}
 
 			}
@@ -313,18 +297,17 @@ class ControladorTrabajador
 									window.location = "trabajadores";
 								}
 
-							});	
+							});
 					 </script>';
 			} else {
 				# code...
 			}
-			
 		}
 	}
 	/*=============================================
 	=            BORRAR TRABAJADOR         =
 	=============================================*/
- 
+
  static public function ctrBorrarTrabajador(){
  	if (isset($_GET["idTrabajador"])) {
  		$tabla= "empleado";
@@ -351,21 +334,13 @@ class ControladorTrabajador
 									window.location = "trabajadores";
 								}
 
-							});	
+							});
 					 </script>';
-			 	
 			 }else {
 			 	var_dump($respuesta);
 			}
- 		
- 		
  	} else {
  		# code...
  	}
- 	
  }
-
-
- 
-	
 }

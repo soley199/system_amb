@@ -183,6 +183,75 @@ class ControladorEncuesta{
 			}
 
 		}
+
+
+		static public function InsertarEncuesta360(){
+
+			if (isset($_POST["optionsRadios1"])) {
+				$tabla = "encuesta360";
+				$Id = "id_encuesta";
+				$id_encuesta = ModeloRHCategorias::mdlRecuperarConsecutivo($tabla,$Id);
+				 
+				$datos = array('preg_1' => $_POST["optionsRadios1"] ,
+							   'preg_2' => $_POST["optionsRadios2"] ,
+							   'preg_3' => $_POST["optionsRadios3"] ,
+							   'preg_4' => $_POST["optionsRadios4"] ,
+							   'preg_5' => $_POST["optionsRadios5"] ,
+							   'preg_6' => $_POST["optionsRadios6"] ,
+							   'preg_7' => $_POST["optionsRadios7"] ,
+							   'preg_8' => $_POST["optionsRadios8"] ,
+							   'preg_9' => $_POST["optionsRadios9"] ,
+							   'preg_10' => $_POST["optionsRadios10"] ,
+							   'preg_11' => $_POST["optionsRadios11"] ,
+							   'preg_12' => $_POST["optionsRadios12"] ,
+							   'preg_13' => $_POST["optionsRadios13"] ,
+							   'preg_14' => $_POST["optionsRadios14"] ,
+							   'preg_15' => $_POST["optionsRadios15"] ,
+							   'preg_16' => $_POST["optionsRadios16"] ,
+							   'preg_17' => $_POST["optionsRadios17"] ,
+							   'preg_18' => $_POST["optionsRadios18"] ,
+							   'preg_19' => $_POST["optionsRadios19"] ,
+							   'preg_20' => $_POST["optionsRadios20"] ,
+							   'preg_21' => $_POST["optionsRadios21"] ,
+							   'preg_22' => $_POST["optionsRadios22"] ,
+							   'preg_23' => $_POST["optionsRadios23"] ,
+							   'preg_24' => $_POST["option24"] ,
+							   'preg_25' => $_POST["optionsRadios25"] ,
+							   'preg_26' => $_POST["optionsRadios26"] ,
+							   'preg_27' => $_POST["optionsRadios27"] ,
+							   'preg_28' => $_POST["optionsRadios28"] ,
+							   'num_tar' => $_POST["num_TerjetaEncu"],
+							   'tipo' => $_POST["tipoencu360Encu"],
+							   'Consecutivo' => $id_encuesta["id_encuesta"]
+							);
+				$respuesta = ModeloEncuesta::MdlAgregarEncuesta360($tabla,$datos);
+		
+				var_dump($respuesta);
+				if ($respuesta == "ok") {
+					echo '<script>
+							swal({
+								type: "success",
+								title:"Su Encuesta se a guardado Correcta Mente",
+								showConfirmButton: true,
+								confirmButtonText: "Cerrar",
+								CloseOnComfirm:false
+		
+								}).then((result)=>{
+									if(result.value){
+										window.location = "encu360Per";
+									}
+		
+								});
+						 </script>';
+						 $ConsecutivoActualizar = ModeloRHCategorias::mdlActualizarConsecutivo($tabla,$datos);
+				} else {
+					var_dump($respuesta);
+				}
+		
+		
+			}
+		
+		}
 	}
 
 

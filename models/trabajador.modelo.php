@@ -63,6 +63,28 @@
 			$stmt -> close();
 			$stmt = null;
 		}
+
+		/*=============================================
+		=            RECUPERAR Trabajdor Para encuesta 360       =
+		=============================================*/
+		static public function mdlBuscarencu360($tabla){
+			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE encu360 = 1");
+			$stmt -> execute();
+			return $stmt->fetchAll();
+			$stmt -> close();
+			$stmt = null;
+		}
+
+		/*=============================================
+		=     RECUPERAR Estatus Ecuesta Contestada       =
+		=============================================*/
+		static public function mdlBuscarEncuestaContestada($tabla, $numTarjeta){
+			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE empleado = $numTarjeta");
+			$stmt -> execute();
+			return $stmt->fetch();
+			$stmt -> close();
+			$stmt = null;
+		}
 		/*=============================================
 		=            Mostrar Empleado            =
 		=============================================*/

@@ -136,7 +136,6 @@ class ModeloEncuesta{
 			$stmt -> bindParam(":preg_39",$datos["preg_39"],PDO::PARAM_STR);
 			$stmt -> bindParam(":preg_40",$datos["preg_40"],PDO::PARAM_STR);
 			$stmt -> bindParam(":preg_41",$datos["preg_41"],PDO::PARAM_STR);
-			
 
 			if ($stmt -> execute()) {
 				return "ok";
@@ -145,5 +144,61 @@ class ModeloEncuesta{
 			}
 			$stmt -> close();
 			$stmt = null;
+		}
+
+
+		static public function MdlAgregarEncuesta360($tabla,$datos){
+			$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(id_encuesta, preg_1, preg_2, preg_3, preg_4, preg_5, preg_6, preg_7, preg_8, preg_9, preg_10, preg_11, preg_12, preg_13, preg_14, preg_15, preg_16, preg_17, preg_18, preg_19, preg_20, preg_21, preg_22, preg_23, preg_24, preg_25, preg_26, preg_27, preg_28) VALUES (:id_encu , :preg_1, :preg_2, :preg_3, :preg_4, :preg_5, :preg_6, :preg_7, :preg_8, :preg_9, :preg_10, :preg_11, :preg_12, :preg_13, :preg_14, :preg_15, :preg_16, :preg_17, :preg_18, :preg_19, :preg_20, :preg_21, :preg_22, :preg_23, :preg_24, :preg_25, :preg_26, :preg_27, :preg_28)");
+			$stmt -> bindParam(":id_encu",$datos["Consecutivo"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_1",$datos["preg_1"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_2",$datos["preg_2"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_3",$datos["preg_3"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_4",$datos["preg_4"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_5",$datos["preg_5"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_6",$datos["preg_6"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_7",$datos["preg_7"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_8",$datos["preg_8"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_9",$datos["preg_9"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_10",$datos["preg_10"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_11",$datos["preg_11"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_12",$datos["preg_12"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_13",$datos["preg_13"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_14",$datos["preg_14"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_15",$datos["preg_15"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_16",$datos["preg_16"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_17",$datos["preg_17"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_18",$datos["preg_18"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_19",$datos["preg_19"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_20",$datos["preg_20"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_21",$datos["preg_21"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_22",$datos["preg_22"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_23",$datos["preg_23"],PDO::PARAM_INT);
+			$stmt -> bindParam(":preg_24",$datos["preg_24"],PDO::PARAM_STR);
+			$stmt -> bindParam(":preg_25",$datos["preg_25"],PDO::PARAM_STR);
+			$stmt -> bindParam(":preg_26",$datos["preg_26"],PDO::PARAM_STR);
+			$stmt -> bindParam(":preg_27",$datos["preg_27"],PDO::PARAM_STR);
+			$stmt -> bindParam(":preg_28",$datos["preg_28"],PDO::PARAM_STR);
+
+
+			$idevarn = $datos["tipo"];
+			$stmt2 = Conexion::conectar()->prepare("UPDATE relcionencuesta360 SET $idevarn = :val WHERE empleado = :tarjeta");
+			// $stmt2 -> bindParam(":tipo",$datos["tipo"],PDO::PARAM_STR);
+			$stmt2 -> bindParam(":val",$datos["Consecutivo"],PDO::PARAM_INT);
+			$stmt2 -> bindParam(":tarjeta",$datos["num_tar"],PDO::PARAM_INT);
+
+			if ($stmt -> execute()) {
+				if($stmt2 -> execute()){
+					return "ok";
+				}else{
+					return $stmt->errorInfo();
+				}
+			} else {
+				return $stmt->errorInfo();
+			}
+			$stmt -> close();
+			$stmt = null;
+
+			$stmt2 -> close();
+			$stmt2 = null;
 		}
 }

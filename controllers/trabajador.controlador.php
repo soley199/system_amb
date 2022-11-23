@@ -51,6 +51,26 @@ class ControladorTrabajador
 		return $respuesta;
 	}
 	/*=============================================
+	=            RECUPERAR 	Estatus EMPLEADO     =
+	=============================================*/
+	static public function ctrBuscarencu360(){
+		$tabla = "empleado";
+		$respuesta = ModeloTrabajadores::mdlBuscarencu360($tabla);
+		return $respuesta;
+	}
+
+	/*=============================================
+	=RECUPERAR 	Estatus Ecuesta Contestada    =
+	=============================================*/
+	static public function ctrBuscarEncuestaContestada($Tarjeta){
+		$tabla = "relcionencuesta360";
+		$numTarjeta =$Tarjeta;
+		$respuesta = ModeloTrabajadores::mdlBuscarEncuestaContestada($tabla,$numTarjeta );
+		return $respuesta;
+	}
+
+
+	/*=============================================
 	=            RECUPERAR  EMPLEADO     =
 	=============================================*/
 	static public function ctrMostrarTrabajador($item,$valor){

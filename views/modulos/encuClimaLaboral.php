@@ -1651,10 +1651,10 @@
             <div class="row text-center">
             <div class="col-md-12">
               <button type="button" class="btn btn-primary" id="btnEnviarEncuestaClima"> Enviar Encuesta</span>
-              </button>              
+              </button>
             </div>
           </div>
-          <?php 
+          <?php
           $agregarEncuestaCli = new ControladorEncuesta();
           $agregarEncuestaCli -> InsertarEncuestaClima();
           ?>
