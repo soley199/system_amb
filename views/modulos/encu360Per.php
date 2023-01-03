@@ -42,7 +42,7 @@
                                   <button id="btn360jefe" data-toggle="modal" Num_Tarjeta360="'.$value["Num_Tarjeta"].'" tipoencu360="jefe" contra360="'.$veren361["passjefe"].'" data-target="#modalContinuarEncuesta360" type="button" class=" btn '.($veren361["jefe"] < 1 ?'btn-danger' : 'btn-success').' btn-sm"  ><i class="fa '.($veren361["jefe"] < 1 ?'fa-times' : 'fa-check').'"></i>Jefe</button>
                                   <button id="btn360auto" data-toggle="modal" Num_Tarjeta360="'.$value["Num_Tarjeta"].'" tipoencu360="auto" contra360="'.$veren361["passAuto"].'" data-target="#modalContinuarEncuesta360" type="button" class=" btn '.($veren361["auto"] < 1 ?'btn-danger' : 'btn-success').' btn-sm" > <i class="fa '.($veren361["auto"] < 1 ?'fa-times' : 'fa-check').'"></i> Auto</button>
                                   <button id="btn360compa1" data-toggle="modal" Num_Tarjeta360="'.$value["Num_Tarjeta"].'" tipoencu360="compa1" contra360="'.$veren361["passCompa1"].'" data-target="#modalContinuarEncuesta360" type="button" class=" btn '.($veren361["compa1"] < 1 ?'btn-danger' : 'btn-success').' btn-sm" > <i class="fa '.($veren361["compa1"] < 1 ?'fa-times' : 'fa-check').'"></i>Com1</button>
-                                  <button id="btn360compa2" data-toggle="modal" Num_Tarjeta360="'.$value["Num_Tarjeta"].'" tipoencu360="compa1" contra360="'.$veren361["passCompa2"].'" data-target="#modalContinuarEncuesta360" type="button" class=" btn '.($veren361["compa2"] < 1 ?'btn-danger' : 'btn-success').' btn-sm" > <i class="fa '.($veren361["compa2"] < 1 ?'fa-times' : 'fa-check').'"></i>Com2</button>
+                                  <button id="btn360compa2" data-toggle="modal" Num_Tarjeta360="'.$value["Num_Tarjeta"].'" tipoencu360="compa2" contra360="'.$veren361["passCompa2"].'" data-target="#modalContinuarEncuesta360" type="button" class=" btn '.($veren361["compa2"] < 1 ?'btn-danger' : 'btn-success').' btn-sm" > <i class="fa '.($veren361["compa2"] < 1 ?'fa-times' : 'fa-check').'"></i>Com2</button>
                                   <button id="btn360RRHH" data-toggle="modal" Num_Tarjeta360="'.$value["Num_Tarjeta"].'" tipoencu360="RRHH"  contra360="qwerty123"data-target="#modalContinuarEncuesta360" type="button" class=" btn '.($veren361["RRHH"] < 1 ?'btn-danger' : 'btn-success').' btn-sm" > <i class="fa '.($veren361["RRHH"] < 1 ?'fa-times' : 'fa-check').'"></i>RRHH</button>
                               </div>            <!-- /.info-box-content -->
                           </div>
@@ -85,7 +85,7 @@
                   <label for="inputError">Ingresa Contraseña  </label>
                   <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-th"></i> </span>
-                  <input type="text" class="form-control input-lg" id="continuarEncu360Pass" placeholder="Contraseña" required style="text-align:center;font-size: 20px">
+                  <input type="password" class="form-control input-lg" id="continuarEncu360Pass" placeholder="Contraseña" required style="text-align:center;font-size: 20px">
                   <input id="num_TerjetaCon" name="num_TerjetaCon" type="hidden" value="">
                   <input id="tipoencu360Con" name="tipoencu360Con" type="hidden" value="">
                   <input id="contra360Con" name="contra360Con" type="hidden" value="">
@@ -113,7 +113,7 @@
           <!-- Cabezera del Modal -->
           <div class="modal-header" style="background: #3c8dbc; color: white">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">EVALUACION 360°</h4>
+            <h4 class="modal-title">EVALUACION 360° Administrativos / Mandos Medios / Auxiliares</h4>
           </div>
           <!-- Cuerpo del Modal -->
           <div class="modal-body">
@@ -132,8 +132,8 @@
               <tr>
                 <th>A) AUTOCONCIENCIA</th>
                 <th>PREGUNTA</th>
+                <th>SIEMPRE</th>
                 <th>CASI SIEMPRE</th>
-                <th>ALGUNAS VECES</th>
                 <th>CASI NUNCA</th>
                 <th>NUNCA</th>
               </tr>
@@ -277,10 +277,10 @@
               <tr>
                 <th>B) CONOCIMIENTO</th>
                 <th>PREGUNTA</th>
-                <th>CASI SIEMPRE</th>
-                <th>ALGUNAS VECES</th>
-                <th>CASI NUNCA</th>
-                <th>NUNCA</th>
+                <th>TOTALMENTE</th>
+                <th>MAYORMENTE SI</th>
+                <th>PARCIALMENTE</th>
+                <th>NO</th>
               </tr>
               </thead>
               <tbody>
@@ -422,8 +422,8 @@
               <tr>
                 <th>C) BUSQUEDA DE RESULTADOS</th>
                 <th>PREGUNTA</th>
+                <th>SIEMPRE</th>
                 <th>CASI SIEMPRE</th>
-                <th>ALGUNAS VECES</th>
                 <th>CASI NUNCA</th>
                 <th>NUNCA</th>
               </tr>
@@ -533,10 +533,10 @@
               <tr>
                 <th>D) COMUNICACIÓN</th>
                 <th>PREGUNTA</th>
-                <th>CASI SIEMPRE</th>
-                <th>ALGUNAS VECES</th>
-                <th>CASI NUNCA</th>
-                <th>NUNCA</th>
+                <th>TOTALMENTE</th>
+                <th>MAYORMENTE SI</th>
+                <th>PARCIALMENTE</th>
+                <th>NO</th>
               </tr>
               </thead>
               <tbody>
@@ -644,8 +644,8 @@
               <tr>
                 <th>E) LIDERAZGO</th>
                 <th>PREGUNTA</th>
+                <th>SIEMPRE</th>
                 <th>CASI SIEMPRE</th>
-                <th>ALGUNAS VECES</th>
                 <th>CASI NUNCA</th>
                 <th>NUNCA</th>
               </tr>
@@ -787,8 +787,8 @@
               <tr>
                 <th>F) TRABAJO EN EQUIPO</th>
                 <th>PREGUNTA</th>
+                <th>SIEMPRE</th>
                 <th>CASI SIEMPRE</th>
-                <th>ALGUNAS VECES</th>
                 <th>CASI NUNCA</th>
                 <th>NUNCA</th>
               </tr>
@@ -1087,6 +1087,10 @@
          
           <!-- Cuerpo del footer -->
           <div class="modal-footer">
+              <div class="pull-left"><p>FO-RH-15</p></div>
+              <div class=""><p>Rev.02/2022-11-25</p></div>
+              
+              
           <div class="row text-center">
               <div class="col-md-12">
                 <button type="button" class="btn btn-primary" id="btnEnviarEncuesta360"> Enviar Encuesta</span>
